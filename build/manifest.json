@@ -1,0 +1,20 @@
+{
+  "short_name": "DBM",
+  "name": "Don't Buy Me!",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Don't Buy Me!"
+  },
+  "content_scripts": [{
+    "matches": ["*://*.amazon.com/*"],
+	"all_frames": true,
+    "js": ["edit_cart.js"]
+  }],
+  "permissions": [
+	  "https://*/",
+	  "tabs",
+	  "activeTab"
+  ],
+  "version": "1.0"
+}

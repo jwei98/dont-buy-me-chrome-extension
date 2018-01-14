@@ -1,0 +1,25 @@
+#app-container {
+	padding:15px;
+	width: 525px;
+	height:1200px;
+	flex-direction: column;
+}
+
+.hold-height {
+	height: 175px;
+	overflow-y: scroll;
+}
+
+.panel-heading {
+	text-align: center;
+}
+
+h4,h2 {
+	text-align: center;
+}
+
+.tab {
+	list-style: none !important;
+	display: inline-block;
+	padding-left: 80px;
+}
